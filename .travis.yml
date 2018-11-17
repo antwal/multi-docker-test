@@ -7,8 +7,12 @@ before_install:
   - docker-compose build
   - docker image ls
 
+install:
+  - docker-compose up -d
+
 script:
-  - docker-compose up
+  - curl http://localhost/phpinfo.php
+  - curl http://localhost/db.php
 
 after_script:
   - docker-compose down
