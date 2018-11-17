@@ -1,4 +1,6 @@
 .DS_Store
+!/data/mysql/.gitkeep
 /data/*
+!/logs/.gitkeep
 /logs/*
 
