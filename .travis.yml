@@ -5,7 +5,12 @@ services:
 
 before_install:
   - docker-compose build
-
-script:
   - docker image ls
   - docker ps -a
+
+script:
+  - docker-compose up -d
+
+after_script:
+  - docker-compose down
+
