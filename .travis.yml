@@ -6,11 +6,8 @@ services:
 before_install:
   - docker-compose build
   - docker image ls
-  - docker ps -a
 
 script:
-  - netstat -nlpt | grep 3306
-  - service mysql stop
   - docker-compose up
 
 after_script:

@@ -5,7 +5,7 @@
  * Time: 23:03
  */
 
-$link = mysqli_connect("mysql", "root", "root", null);
+$link = mysqli_connect("mysql", "root", "root", null, "8889");
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
