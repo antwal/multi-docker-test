@@ -8,7 +8,6 @@ before_install:
   - docker-compose build
   - docker image ls
   - sudo /etc/init.d/mysql stop
-  - netstat -nlpt | grep 3306
 
 install:
   - docker-compose up -d
