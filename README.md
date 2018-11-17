@@ -1,5 +1,7 @@
 # multi-docker-test
 
+[![Build Status](https://travis-ci.org/antwal/multi-docker-test.svg?branch=master)](https://travis-ci.org/antwal/multi-docker-test)
+
 Containers:
 
 * PHP 5.6 + Apache 2.4
