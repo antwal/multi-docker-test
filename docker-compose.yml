@@ -19,7 +19,7 @@ services:
     container_name: 'my-mysql'
     restart: 'always'
     ports:
-      - "8889:3306"
+      - "3306:3306"
     volumes:
       - ${MYSQL_DATA_DIR-./data/mysql}:/var/lib/mysql
       - ${MYSQL_LOG_DIR-./logs/mysql}:/var/log/mysql
@@ -33,7 +33,7 @@ services:
       - mysql
     environment:
       PMA_HOST: mysql
-      PMA_PORT: 8889
+      PMA_PORT: 3306
       MYSQL_ROOT_PASSWORD: root
     ports:
       - '8080:80'

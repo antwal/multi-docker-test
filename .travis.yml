@@ -6,6 +6,8 @@ services:
 before_install:
   - docker-compose build
   - docker image ls
+  - service mysql status
+  - netstat -nlpt | grep 3306
 
 install:
   - docker-compose up -d
